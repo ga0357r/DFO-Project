@@ -8,11 +8,6 @@ public class Fly : MonoBehaviour
     public float x = 0;
     public float y = 0;
 
-    public Fly()
-    {
-        
-    }
-
     public static bool operator <(Fly a, float lowerBound)
     {
         if (a.x < lowerBound || a.y < lowerBound)
@@ -52,11 +47,4 @@ public class Fly : MonoBehaviour
         position = new Vector2(x, y);
         transform.position = new Vector2(x, y);
     }
-
-    private void Update()
-    {
-        //position = transform.position;
-    }
-
-
 }
